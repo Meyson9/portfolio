@@ -1,0 +1,671 @@
+body {
+  position: absolute;
+  width: 1366px;
+  height: 4269px;
+  left: 0px;
+  top: 0px;
+  background:#FFFFFF;
+  overflow-x: hidden;
+}
+.becMar {
+  position: absolute;
+  right: 49.15%;
+  top: 0.69%;
+  bottom: 98.82%;
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.homePage {
+  /* position: absolute;
+  left: 17.44%;
+  right: 79.15%;
+  top: 5.69%;
+  bottom: 98.82%;
+  font-family: 'Gilroy-Bold';
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707; */
+
+  left: 266px;
+  color: #070707;
+}
+
+.aboutMe {
+  left: 32.62%;
+  color: #828282;
+  
+}
+
+
+.aboutMas {
+  position: relative;
+  left: 637px;
+  top: 75px;
+  color: #000000;
+}
+
+
+.skills {
+
+left: 680px;
+
+color: #828282;
+}
+
+.portfolio {
+
+  left: 897px;
+ 
+  color: #828282;
+  
+}
+
+.contacts {
+  scroll-behavior: smooth;
+  left: 1116.4px;
+  line-height: 22px;
+  color: #828282;
+}
+
+.hr {
+  position: absolute;
+  width: 940.6px;
+  height: 0px;
+  left: 250.69px;
+  top: 50.94px;
+
+  border: 1px solid #828282;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.nameDenis {
+  position: absolute;
+  left: 18.37%;
+  right: 74.08%;
+  top: 75px;
+  bottom: 94.82%;
+  font-family: 'Gilroy-Bold';
+  font-size: 47.3392px;
+  line-height: 59px;
+  color: #070707;
+}
+
+.uiux {
+  position: absolute;
+  left: 46.49%;
+  right: 42.74%;
+  top: 139.85px;
+  bottom: 95.22%;
+  font-family: 'Gilroy-Medium';
+  font-size: 18px;
+  line-height: 22px;
+  color: #070707;
+}
+
+.chekBks {
+   position: absolute;
+  left: 801px;
+  right: -200.49px;
+  top: -215px;
+  /* bottom: 0px; */
+  font-family: 'Gilroy-Bold';
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+  transform: rotate(270deg); 
+  /*transform-origin: left;
+  margin-left: -9rem;  */
+}
+
+.photoDen {
+  position: absolute;
+  width: 941.61px;
+  height: 387px;
+  left: 250px;
+  top: 224px;
+}
+
+.olenPup {
+  position: absolute;
+  width: 1366px;
+  height: 506px;
+  left: 0px;
+  top: 768px;
+  background: #F6F6F6;
+}
+
+.infoParens {
+  margin: 0 auto;
+  position: absolute;
+  width: 429.34px;
+  height: 218px;
+  left: 480.33px;
+  top: 178px;
+  font-family: 'Gilroy-Medium';
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #070707;
+
+}
+
+.skilsPop {
+  position: absolute;
+  width: 1366px;
+  height: 506px;
+  left: 0px;
+  top: 1200px;
+}
+
+.hed2 > h2 {
+  position: relative;
+  position: absolute;
+  left: 655.8px;
+  right: 45.59%;
+  top: 15.68%;
+  bottom: 70.77%;
+  
+  font-family: 'Gilroy-Bold';
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+
+  color: #070707;
+}
+
+.skilprog {
+  
+position: absolute;
+left: 79px;
+right: 42.04px;
+top: 30.68%;
+bottom: 68.81%;
+
+font-family: 'Gilroy-Medium';
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+
+color: #070707;
+}
+
+.photo {
+  position: absolute;
+  top: 53%;
+  bottom: 65.3%;
+  
+}
+
+.adobePhoto {
+  left: 275.2px;
+  right: 73.73%;
+  
+  background: radial-gradient(75.99% 75.64% at 32.94% 22.44%, rgba(52, 54, 78, 0.98) 0%, #0C0824 100%);
+}
+
+.HeadNamePhoto {
+  
+position: absolute;
+top: 98.29px;
+bottom: 64.14%;
+
+font-family: 'Gilroy-Bold';
+font-size: 19px;
+line-height: 25px;
+text-align: center;
+
+color: #828282;
+
+}
+.controlAllPhoto{
+  left: 6px;
+}
+.photoshopTitle {
+  left: 282.99px;
+  right: 74.15%;
+}
+
+.illusStar{
+  left: 201px;
+}
+.star {
+  
+  position: absolute;
+  top: 85.29px;
+  bottom: 64.14%;
+}
+illu
+.activeStar {
+  background: #ffffff;
+  border-radius: 1px;  
+}
+.star .s0 {
+  left: 307.99px;
+  right: 74.15%;
+}
+
+.star .s1 {
+  left: 274.99px;
+  right: 74.15%;
+}
+
+.star .s2 {
+  left: 241.99px;
+  right: 74.15%;
+}
+
+.star .s3 {
+  left: 340.99px;
+  right: 74.15%;
+}
+
+.star .s4 {
+  left: 373.99px;
+  right: 74.15%;
+}
+
+.AdobeIllu {
+left: 475.2px;
+right: 4.19%;
+top: 53%;
+background: radial-gradient(76% 75.63% at 32.97% 22.44%, rgba(66, 51, 37, 0.98) 0%, #1C0A00 100%);
+}
+
+.adoillu {
+  left: 483.99px;
+  right: 74.15%;
+}
+
+.adAterEff {
+left: 645px;
+right: 0%;
+
+background: radial-gradient(76% 75.63% at 32.97% 22.42%, rgba(68, 47, 85, 0.98) 0%, #12002C 100%);
+}
+
+.afterEfectTitle {
+  left: 772px;
+  right: 50px;
+
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+  margin-inline-start: -165px;
+  margin-inline-end: 0px;
+}
+.aftereff {
+  left:  377px;
+}
+.Figma {
+  left: 825px;
+}
+.FigmaStar {
+  left: 545px;
+}
+
+.portfolioBloc {
+  position: absolute;
+  width: 1445px;
+  height: 2253px;
+  left: 0px;
+  top: 1736px;
+
+  background: #F6F6F6;
+}
+
+.portfolioTitle {
+  
+position: absolute;
+left: 608px;
+right: 45.21%;
+top: 41.96px;
+bottom: 57.13%;
+
+font-family: 'Gilroy-Bold';
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+
+/* Black */
+
+color: #070707;
+
+}
+
+.photoAll{
+  position: absolute;
+  width: 936.24px;
+  height: 510px;
+  left: 255.71px;
+  
+}
+
+.photoTopSliz {
+top: 175px;
+}
+
+
+.titlePhotoPart{
+  
+position: absolute;
+left: 552px;
+right: 40.1%;
+/* top: 700px; */
+bottom: 44.02%;
+
+font-family: 'Gilroy-Medium';
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+text-decoration-line: underline;
+color: #070707;
+
+}
+.titleHomePage {
+  top: 700px;
+}
+
+.titlleReebok {
+  top: 1320px;
+}
+
+.photoTopReebokSt {
+top: 800px;
+/* display: none; */
+}
+
+
+
+.photoBraun {
+  top: 1400px;
+  /* display: none; */
+}
+
+.titlReebBraun {
+  top: 1934px;
+}
+
+
+footer {
+  
+position: absolute;
+width: 1445px;
+height: 359px;
+left: 0px;
+top: 3850px;
+
+background: #FFFFFF;
+}
+
+.contactTitle {
+  
+position: absolute;
+left: -23px;
+right: 45.03%;
+top: 30px;
+bottom: 9.76%;
+
+font-family: 'Gilroy-Bold';
+font-size: 34px;
+line-height: 42px;
+text-align: center;
+position: relative;
+
+/* Black */
+
+color: #070707;
+
+}
+
+.contactP {
+  position: absolute;
+  left: 582px;
+  right: 45.03%;
+  top: 93px;
+  /* bottom: 8.42%; */
+
+  font-family: 'Gilroy-Medium';
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  color: #070707;
+}
+
+.contactPe {
+  position: absolute;
+  left: 607px;
+  right: 45.03%;
+  top: 123px;
+  /* bottom: 8.42%; */
+
+  font-family: 'Gilroy-Medium';
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+  color: #070707;
+}
+
+.buttonSub {
+  position: relative;
+  background: #4F2D69;
+  border: none;
+  color: #ffffff;
+  border-radius: 3px;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 34px;
+  padding: 5px 25px;
+  margin: 0 auto;
+  display: inline-block;
+  left: 597px;
+
+   /* font */
+color: black;
+font-size: 20px;
+font-family: helvetica;
+
+/* remove blue underline */
+text-decoration: none;
+
+/* border */
+border: 2px solid black;
+border-radius: 20px;
+
+/* transitions */
+transition-duration: .2s;
+-webkit-transition-duration: .2s;
+-moz-transition-duration: .2s;
+
+/* other */
+background-color: white;
+padding: 4px 30px;
+
+  left: 599px;
+  top: 126px;
+}
+
+.pupert {
+position: absolute;
+width: 342.18px;
+height: 40.92px;
+left: 534px;
+top: 326.78px;
+}
+
+.padding12 {
+  padding: 20px;
+}
+
+.container {
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 1200px;
+  background-color: burlywood;
+  padding: 10px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.hamburger {
+  display: none;
+}
+ul li::marker {
+  list-style-type: none;
+}
+.i_1, .i_2, .i_3 {
+  display: none;
+}
+@media screen and (max-width: 14010px) {
+  .container {
+    background-color: green;
+  }
+  .hamburger {
+    display: block;
+    position: fixed;
+    width: 20px;
+    left: 523px;
+    top: 20px;
+    z-index: 200;
+  }
+  /* .hamburger_active {
+    
+  } */
+  .i_2 {
+    display: block;
+    list-style-type: none;
+    /* left: 76px;
+    top: 3px; */
+    position: absolute;
+    background-color: red;
+    z-index: 100;
+    color: white;
+    left: 6.93%;
+    right: 53.33%;
+    top: 50px;
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .hrWert{
+    transform: rotate(90deg);
+    display: none;  
+    left: 0px;
+    z-index: 101;    
+  }
+ .homePage {
+  list-style-type: none;
+  /* left: 76px;
+  top: 3px; */
+  position: absolute;
+  background-color: red;
+  z-index: 100;
+  color: white;
+  left: 6.93%;
+  right: 53.33%;
+  top: 50px;
+  font-size: 34px;
+  line-height: 42px;
+}
+  /* #men {
+    list-style-type: none;
+    left: -248px;
+    position: relative;
+    background-color: red;
+    z-index: 100;
+} */
+  /* } */
+.aboutMe {
+    list-style-type: none;
+    position: absolute;
+    left: 6.93px;
+    right: 26.67%;
+    top: 111px;
+    bottom: 77.83%;
+    
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    /* background-color: red; */
+    z-index: 100;
+  }
+ .skills {
+  list-style-type: none;
+  position: absolute;
+  left: 5.93px;
+  right: 26.67%;
+  top: 175px;
+  bottom: 77.83%;
+  
+  font-family: 'Gilroy-Bold';
+  font-size: 34px;
+  line-height: 42px;
+  /* background-color: red; */
+  z-index: 100;
+ } 
+ .portfolio {
+  list-style-type: none;
+  position: absolute;
+  left: 5.93px;
+  right: 26.67%;
+  top: 235px;
+  bottom: 77.83%;
+  
+  font-family: 'Gilroy-Bold';
+  font-size: 34px;
+  line-height: 42px;
+  /* background-color: red; */
+  z-index: 100;
+ }
+ .contacts {
+  list-style-type: none;
+    position: absolute;
+    left: 6.93px;
+    right: 26.67%;
+    top: 300px;
+    bottom: 77.83%;
+    
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    /* background-color: red; */
+    z-index: 100;
+ }
+.menu {
+    display: flex;
+    position: fixed;  
+    top: 0px;
+    right: 0px; 
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    flex-direction: column;
+    background-color: black;
+    opacity: 0.8; 
+    z-index: 90;
+    line-height:normal;
+  }
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    flex-direction: column;
+    z-index: 100;
+    /* top: -1011ex; */
+  }
+  .menu link {
+   font-size: 20px;
+   width: 100%;
+  }
+
+  #men{
+    background-color: rgba(0,1,0 .8) ;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: rgb(254, 254, 254);
+    margin-top: 2px; 
+  }
+}
