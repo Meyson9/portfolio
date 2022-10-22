@@ -815,7 +815,7 @@ background-color: #fff;
     max-width: 720px;
   } */
   .chekBksMini {
-    display: block;
+    display: none;
   } 
   .uiux {
     font-size: 13px;
