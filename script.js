@@ -5041,7 +5041,7 @@ var form = function form() {
       var masArrrt = Object.keys(value);
       console.log(masArrrt);
       var whiteList = ['userName', 'phone', 'email', 'userText', 'submit', 'phone', 'userName'],
-          t = ['userName', 'phone', 'email', 'userText'];
+          t = ['userName', 'phone', 'email', 'userText', 'submit'];
       var k = true;
       var shortNames = masArrrt.filter(function (name, i) {
         console.log('включилась фунция shortNames');
