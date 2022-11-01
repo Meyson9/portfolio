@@ -5044,11 +5044,16 @@ var form = function form() {
           t = ['userName', 'phone', 'email', 'userText'];
       var k = true;
       var shortNames = masArrrt.filter(function (name, i) {
-        // console.log(i);
+        console.log('включилась фунция shortNames');
+	    console.log(name);
+	    console.log(t[i]);
         if (name === t[i]) {
-          var j = name; // console.log(j + 't');
+          var j = name;
+		console.log(j + 't');
+		    console.log(name);
+	    console.log(t[i]);
         } else {
-          // console.log(name + 'yyyyy');
+           console.log(name + 'yyyyy');
           return k = false;
         }
       }); // console.log(shortNames); 
