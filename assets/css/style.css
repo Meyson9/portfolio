@@ -1012,12 +1012,27 @@ svg.animate path {
 
 @keyframes animate_pulse2 {
 	0% {
+		-webkit-box-shadow: 0 0 0 0 rgb(228,25,49,0);
+	}
+	70% {
+    -webkit-box-shadow: 0 0 0 20px rgb(228,25,49,0.1);
+	}
+	100% {
+    -webkit-box-shadow: 0 0 0 0 rgb(228,25,49,0);
+	}
+}
+
+@keyframes animate_pulse2 {
+	0% {
+    -moz-box-shadow:  0 0 0 0 rgb(228,25,49,0);
 		box-shadow: 0 0 0 0 rgb(228,25,49,0);
 	}
 	70% {
+    -moz-box-shadow:  0 0 0 20px rgb(228,25,49,0.1);
 		box-shadow: 0 0 0 20px rgb(228,25,49,0.1);
 	}
 	100% {
+    -moz-box-shadow:  0 0 0 0 rgb(228,25,49,0);
 		box-shadow: 0 0 0 0 rgb(228,25,49,0);
 	}
 }
@@ -1065,32 +1080,80 @@ svg.animate path {
   border-top: 3px solid #EFEFFA;
 }
 
+
+@-webkit-keyframes rotate-one {
+  0% {
+    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
 @keyframes rotate-one {
   0% {
+    -moz-transform:  rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
     transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
   }
   100% {
+    -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
     transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-two {
+  0% {
+    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
   }
 }
 
 @keyframes rotate-two {
   0% {
+    -moz-transform:  rotateX(50deg) rotateY(10deg) rotateZ(0deg);
     transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
   }
   100% {
+    -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
     transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-three {
+  0% {
+    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }
 
 @keyframes rotate-three {
   0% {
+    -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
     transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
   }
   100% {
+    -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
   }
 }
+
+
+@-webkit-keyframes faded {
+  0% {
+    opacity: 0;
+     }
+  25% {
+    opacity: 0.5;
+  }
+   100% {
+    opacity: 0.8;
+  }
+  }
+
 
 
 @keyframes faded {
@@ -1104,6 +1167,20 @@ svg.animate path {
     opacity: 0.8;
   }
   }
+
+  
+@-webkit-keyframes fadedOFF {
+  0% {
+   opacity: 1;
+    }
+ 25% {
+   opacity: 0.5;
+ }
+  100% {
+   opacity: 0;
+   display: none;
+  }
+}
 
 @keyframes fadedOFF {
   0% {
