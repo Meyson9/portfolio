@@ -1248,7 +1248,7 @@ svg.animate path {
    
   
     .gridmenu { 
-      margin-top: -30px;
+/*       margin-top: -30px; */
       row-gap: 0px;
     }
     .chekBksMini{
@@ -1362,7 +1362,7 @@ svg.animate path {
    @media screen and (max-height: 480px) {
    
     .gridmenu { 
-      margin-top: -30px;
+/*       margin-top: -30px; */
       row-gap: 0px;
     }
     .chekBksMini{
@@ -1470,7 +1470,7 @@ footer {
  @media screen and (max-height: 480px) {
  
   .gridmenu { 
-    margin-top: -30px;
+/*     margin-top: -30px; */
     row-gap: 0px;
   }
   .chekBksMini{
