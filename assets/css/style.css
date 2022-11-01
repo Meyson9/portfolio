@@ -1522,6 +1522,7 @@ footer {
 .visible {
   -moz-transform: translateY(0);
   transform: translateY(0);
+ -moz-transform: transform 0.3s;
   transition: transform 0.3s;
 }
 
