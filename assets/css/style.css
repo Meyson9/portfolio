@@ -1522,6 +1522,8 @@ footer {
 } */
 
 .visible {
+  -webkit-transform: translateY(0);
+  -webkit-transition: transform 0.3s;;
   -moz-transform: translateY(0);
   transform: translateY(0);
  -moz-transform: transform 0.3s;
