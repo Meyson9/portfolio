@@ -806,13 +806,14 @@ background-color: #fff;
 }
 
 .form__input {
-	height: 70px;
-	padding-left: 10px;
-	margin-bottom: 30px;
+  height: 70px;
+  padding-left: 10px;
+  margin-bottom: 30px;
   background-color: aliceblue;
   border: aliceblue;
   border-radius: 10px;
   border: none;
+  font-size: 18px;	
 }
 
 .form__input_text{
@@ -823,6 +824,7 @@ background-color: #fff;
   resize: vertical;
   border-radius: 10px;
   border: none;
+  font-size: 18px;	
 
 }
 
