@@ -26,39 +26,36 @@
         <section class=" one container_grid">
           <div class="grid_mn ">
               <ul class="gridmenu">
-                <li class="menu_item hte start"><a id="home" style="text-decoration: none" class=" becMar homePage" target="_blank" href="#SectionHome">Home</a></li>
-                <li class="menu_item"><a style="text-decoration: none" class=" becMar aboutMe col" target="_blank" href="#aboutMe">About me</a></li>
-                <li class="menu_item"><a style="text-decoration: none" class=" becMar skills col " target="_blank" href="#skills">Skills</a></li>
-                <li class="menu_item"><a style="text-decoration: none" class=" becMar portfolioq col" target="_blank" href="#portfolio">Portfolio</a></li>
-                <li class="menu_item end"><a style="text-decoration: none" class=" becMar contacts col" target="_blank" href="#contacts"  onclick="">Contacts</a></li>
-                <li class="menu_item" style="list-style-type: none;"><p id="langvich" class="chekBksMini "> <span>RU</span> <span>|</span> <span>ENG</span></p></li> 
-                <!-- <li><hr  class="hr hrWert"></li> -->
+                <li class="menu_item hte start"><a id="home" data-translete="0" style="text-decoration: none" class=" becMar homePage" target="_blank" href="#SectionHome">Home</a></li>
+                <li class="menu_item"><a style="text-decoration: none" data-translete="1" class=" becMar aboutMe col" target="_blank" href="#aboutMe">About me</a></li>
+                <li class="menu_item"><a style="text-decoration: none" data-translete="2" class=" becMar skills col " target="_blank" href="#skills">Skills</a></li>
+                <li class="menu_item"><a style="text-decoration: none" data-translete="3" class=" becMar portfolioq col" target="_blank" href="#portfolio">Portfolio</a></li>
+                <li class="menu_item end"><a style="text-decoration: none" data-translete="4" class=" becMar contacts col" target="_blank" href="#contacts"  onclick="">Contacts</a></li>
+                <li class="menu_item" style="list-style-type: none;"><p id="langvich"  class="chekBksMini "> <span id="spanRuMini">RU</span> <span>|</span> <span id="spanEumini">ENG</span></p></li> 
                 <div class="hr" ></div>
-              
-
               </ul>
           </div>
         
         </nav>
        
-        <div class="hamburger">
+        <div  class="hamburger">
           <span class="span_1 burgerPassivSpan"></span>
           <span class="span_2 burgerPassivSpan"></span>
           <span class="span_3 burgerPassivSpan"></span>
         </div>
-    </header>
+    </header> 
 
      <main>
       <section class="container_grid">
       <div id="SectionHome" class="sectionHome">
         <!-- <hr class="hr">     -->
-        <div class="nameDenis">Denis Novik</div>
+        <div data-translete="5" class="nameDenis">Denis Novik</div>
           <!-- <div class="gridHome nameDenisDiv "> -->
             <!-- <div class="uiux" >UX | UI designer <br> 24 years old, Minsk</div> -->
             <!-- <div id="langvich" class="chekBks"> RU | ENG</div> -->
           <!-- </div> -->
-          <div class="uiux" >UX | UI designer <br> 24 years old, Minsk</div>
-          <div  class="chekBks"> RU | ENG</div>
+          <div data-translete="6" class="uiux" >UX | UI designer <br> 24 years old, Minsk</div>
+          <div id="langvich" class="chekBks"><span id="spanRu" >RU</span> <span>|</span> <span id="spanEUG">ENG</span></div>
           <!-- <div class="gridHome uiuxDiv">
           </div> -->
           <!-- <div class="gridHome chekBksDiv">
@@ -82,15 +79,15 @@
     <section class="abautmeSection">
         <div id="aboutMe" class="olenPup" >
           <div class="aboutMas">
-            <h2 id="aboutMas">About me</h2>
+            <h2 data-translete="7" id="aboutMas">About me</h2>
           </div>
           <!-- <div class="gridChild">11111111</div> -->
           <div class="infoParens">
-              <p  class="paragrefAll">Hi, I'm Denis – UX/UI designer from Minsk. <br>
+              <p data-translete="8" class="paragrefAll">Hi, I'm Denis – UX/UI designer from Minsk. <br>
                 I'm interested in design and everything connected with it. </p>
-              <p class="paragrefAll">I'm studying at courses  "Web and mobile design <br>
+              <p data-translete="9" class="paragrefAll">I'm studying at courses  "Web and mobile design <br>
                 interfaces" in IT-Academy.</p>
-              <p class="paragrefAll">Ready to implement excellent projects <br>
+              <p data-translete="10" class="paragrefAll">Ready to implement excellent projects <br>
                 with wonderful people.</p>
             </div>
         </div>
@@ -101,10 +98,10 @@
     <section class="ability">    
       <div id="skills"  class="skilsPopd">
           <div>
-            <h2 class='titleSkils'>Skills</h2>
+            <h2 data-translete="11" class='titleSkils'>Skills</h2>
           </div>
               <div>
-                <p class="skilprog">I work in such programs as</p>
+                <p data-translete="12" class="skilprog">I work in such programs as</p>
               </div>
               <div class="controlAllPhoto">
                  <div id="photosop" class="photoR adobePhotoshCollA "  >
@@ -186,24 +183,24 @@
 <section class="portfolio">
   <div id="portfolio" class="pfolioBloc">
     <div>
-      <h2 class="portfolioTitle">Portfolio</h2> 
+      <h2 data-translete="13" class="portfolioTitle">Portfolio</h2> 
     </div>
         <div class="photoAll">
           <img class="photoGrid photoTopSliz" src="assets/img/portfolio/slis.png" alt="Online store">
         </div>
-       <h3 class="titlePhotoPart titleHomePage">Online fashion store - Homepage</h3>
+       <h3 data-translete="14" class="titlePhotoPart titleHomePage">Online fashion store - Homepage</h3>
            
         <div class="photoAll">
           <img class="photoGrid photoTopReebokSt"  src="assets/img/portfolio/reebokWeb.png" alt="Reebok Store">
         </div>
-       <h3 class="titlePhotoPart titlleReebok " >Reebok Store - Concept</h3>
+       <h3 data-translete="15" class="titlePhotoPart titlleReebok " >Reebok Store - Concept</h3>
            
         <div class="photoAll">
           <img class="photoGrid photoBraun" src="assets/img/portfolio/reebokWebBraun.png" alt="Braun Landing">
         </div>
-       <h3 class="titlePhotoPart titlReebBraun">Braun Landing Page - Concept</h3>
+       <h3 data-translete="16" class="titlePhotoPart titlReebBraun">Braun Landing Page - Concept</h3>
        <div class="btnDiv">
-        <button id="btnMore" class="buttonSub nutn">I want more...</button>
+        <button id="btnMore" data-translete="17" class="button_form_Sub nutn">I want more...</button>
       </div>  
   </div>
     
@@ -215,18 +212,18 @@
       <section>
       <div class="footerGrid">
         <div id="contacts" class="titleCont">
-          <h2 class="contactTitle">Contacts</h2>
-          <p class="contactP" >Want to know more or just chat?</p>
-          <p  class="contactPe">You are welcome!</p>
+          <h2 data-translete="18" class="contactTitle">Contacts</h2>
+          <p data-translete="19" class="contactP" >Want to know more or just chat?</p>
+          <p data-translete="20" class="contactPe">You are welcome!</p>
         </div>
         <div >
-          <button class="buttonSub">Send message</button>
+          <button data-translete="21" id="bottenOpenForm" class="button_form_Sub">Send message</button>
         </div>
         <div class="pupert">
           <a target="_blank" href="https://google.com"><img class="padding12"  src="assets/img/icon/in.png" alt="sochial"></a>
           <a target="_blank" href="https://google.com"><img class="padding12"  src="assets/img/icon/inst.png" alt="instagram"></a>
           <a target="_blank" href="https://google.com"><img class="padding12"  src="assets/img/icon/be.png" alt="be"></a>
-          <a target="_blank" href="https://google.com"><img class="padding12"  src="assets/img/icon/in.png" alt="bols"></a>
+          <img class="padding12 togallMod " style="cursor: pointer;" src="assets/img/icon/bols.png" alt="bols">
         </div>
     </div>
   </section>
@@ -236,32 +233,29 @@
  
     <!-- Modals -->
     <div id="myModal" class="modal hideModal" >
-        <span class="clouse" >&times;</span>
-        <img class="modal_content"  id="img01">
-        <div id="caption"></div>
+          <span class="clouse" >&times;</span>
+          <img class="modal_content"  id="img01">
+          <div id="caption"></div>
     </div>
-
+    <!-- modal_slider  -->
     <div class="modal_slider hideModal" >
       <span class="clouse__slide" >&times;</span>
       <div class="modal_slid_contnt">
         <div class="boxWhet"></div>
-        <div class="titleSlide">By the way, I'm a photographer</div>
-      <div class="offer__slider">
-       
-        <!-- <div class="offer__slider-counter"> -->
+        <div data-translete="22" class="titleSlide">By the way, I'm a photographer</div>
+        <div class="offer__slider">
             <div class="offer__slider--prev">
                 <img class="pointSize" src="assets/img/icon/left.svg" alt="prev">
             </div>
             <div class="offer__slider-numer">
-           <div>
-             <span id="current">03</span>/<span id="total">04</span>
-           </div>
-          </div>
+                <div>
+                  <span id="current">03</span>/<span id="total">04</span>
+                </div>
+            </div>
             <div class="offer__slider--next">
                 <img class="pointSize" src="assets/img/icon/right.svg" alt="next">
             </div>
-        <!-- </div> -->
-      </div>
+        </div>
         <div id="swipeTest" class="offer__slider__wrapper">
             <div  class="offer__slide">
                 <img src="assets/img/slider/BSPGirl1.png" alt="pepper">
@@ -279,11 +273,26 @@
               <img src="assets/img/slider/BSPGIRL4.png" alt="paprika">
             </div>
         </div>
-   
+      </div>
     </div>
-    </div>
-
+    <!-- modal form -->
+    <div class="modals_forms hideModal">
+      <div class="modals_form">
+          <!-- <button class="modal__btn"></button> -->
+          <span class="clouse__slide_form" >&times;</span>
+          <button class="mobile-close" data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false"></button>
     
+          <form id="modal__form" name="zaebl" class="modal__form form" action="#" enctype="multipart/form-data" method="POST">
+          <input type="text" tabindex="1"   name="userName" class="form__input" placeholder="Name *" value="weqe" data-form="0">
+          <input type="tel" tabindex="2" name="phone" class="form__input" placeholder="Phone" value="" data-form="1">
+          <input type="email" tabindex="3" name="email" class="form__input" placeholder="Email *" value="weqe@a" data-form="2">
+          <textarea type="text" tabindex="4" cols="30" rows="40" name="userText" class="form__input_text" data-form="3" placeholder="your message"></textarea>
+          <button  data-translete="23" class="form__btn" name="submit" type="submit" tabindex="5">Send</button>
+        </form>
+
+  
+      </div>
+    </div>
     <script src="script.js"></script>
     <!-- Initialize modal, sliders -->
 
