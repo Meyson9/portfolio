@@ -4823,8 +4823,8 @@ window.addEventListener('DOMContentLoaded', function () {
   //     console.log('mobilnik');
   // }
   // touch()
-  Object(_modules_scrolTop__WEBPACK_IMPORTED_MODULE_0__["default"])(); // userLocation();
-
+  Object(_modules_scrolTop__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_modules_userLocation__WEBPACK_IMPORTED_MODULE_11__["default"])();
   Object(_modules_form__WEBPACK_IMPORTED_MODULE_8__["default"])();
   Object(_modules_swiped_events_min__WEBPACK_IMPORTED_MODULE_7__["default"])();
   Object(_modules_formModal__WEBPACK_IMPORTED_MODULE_6__["default"])();
