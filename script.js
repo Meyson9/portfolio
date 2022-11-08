@@ -4823,8 +4823,8 @@ window.addEventListener('DOMContentLoaded', function () {
   //     console.log('mobilnik');
   // }
   // touch()
-  Object(_modules_scrolTop__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_modules_userLocation__WEBPACK_IMPORTED_MODULE_11__["default"])();
+  Object(_modules_scrolTop__WEBPACK_IMPORTED_MODULE_0__["default"])(); // userLocation();
+
   Object(_modules_form__WEBPACK_IMPORTED_MODULE_8__["default"])();
   Object(_modules_swiped_events_min__WEBPACK_IMPORTED_MODULE_7__["default"])();
   Object(_modules_formModal__WEBPACK_IMPORTED_MODULE_6__["default"])();
@@ -5297,14 +5297,18 @@ var imgBig = function imgBig() {
       img = document.querySelectorAll('.photoGrid'),
       modalImg = document.querySelector('#img01'),
       captionText = document.querySelector('#caption'),
+      skilsIcon = document.querySelectorAll('.photo'),
+      html = document.querySelector('html'),
+      itext = __webpack_require__(/*! ../services/db.json */ "./src/js/services/db.json"),
       span = document.querySelector('.clouse');
+
   modal.classList.add('hideModal');
   /*clous modall x */
 
   try {
     span.addEventListener('click', clouseModal);
   } catch (error) {}
-  /*clous modall backgraund */
+  /*clous modall click backgraund */
 
 
   modal.addEventListener('click', function (e) {
@@ -5336,46 +5340,48 @@ var imgBig = function imgBig() {
 
       document.addEventListener('keydown', function (e) {
         if (e.code === 'ArrowRight') {
-          count--;
-
-          if (count < 0) {
-            count = img.length - 1;
-          }
-
-          slide();
+          slidDecrement();
         }
       });
       document.addEventListener('keydown', function (e) {
         if (e.code === 'ArrowLeft') {
-          count++;
-
-          if (count > img.length - 1) {
-            count = 0;
-          }
-
-          slide();
+          slideIncreent();
         }
       });
-      modalImg.addEventListener('swiped-left', function () {
-        count++;
-
-        if (count > img.length - 1) {
-          count = 0;
-        }
-
-        slide();
-      });
-      modalImg.addEventListener('swiped-right', function () {
-        count--;
-
-        if (count < 0) {
-          count = img.length - 1;
-        }
-
-        slide();
-      });
+      modalImg.addEventListener('swiped-left', slideIncreent);
+      modalImg.addEventListener('swiped-right', slidDecrement);
     });
   });
+  /* ---------------------------------------------------------*/
+
+  skilsIcon.forEach(function (item, i) {
+    item.addEventListener('click', function (e) {
+      console.log(i);
+      openImgModal(e, item);
+      rtyu(1, i, item);
+      modalImg.classList.add('modal_cont_skils');
+    });
+  });
+
+  function slideIncreent() {
+    count++;
+
+    if (count > img.length - 1) {
+      count = 0;
+    }
+
+    slide();
+  }
+
+  function slidDecrement() {
+    count--;
+
+    if (count < 0) {
+      count = img.length - 1;
+    }
+
+    slide();
+  }
 
   function slide() {
     modalImg.src = img[count].getAttribute('src');
@@ -5396,7 +5402,56 @@ var imgBig = function imgBig() {
   function clouseModal() {
     modal.classList.remove('showModal');
     modal.classList.add('hideModal');
+    modalImg.classList.remove('modal_cont_skils');
+    modalImg.className = ''; // решение бага
+
+    var p = modalImg.classList;
+    console.log(p);
+    console.log(p.length);
+    /*Этот баг будет тут всегда, нужно на странце в секции склов открыть картинку а после посмотреть 
+    на первую модалку, в класс картинки, один класс удаляется через раз, цыкл его неберет   
+    for (const iterator of p)  {
+        
+        // let p = modalImg.classList;
+                // console.log(iterator);
+            //    if(p !== '') {
+                console.log('не пустой');
+                   console.log(modalImg.classList);
+                   modalImg.classList.remove(`${iterator}`);
+                   console.log(modalImg.classList);
+                // }else {
+                    console.log('пустой');
+                // }
+        }
+        // console.log(modalImg.classList);
+    // console.log(modalImg.classList);
+    */
+
+    modalImg.classList.add('modal_content');
     document.body.style.overflow = '';
+  }
+
+  function rtyu() {
+    var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+    var i = arguments.length > 1 ? arguments[1] : undefined;
+    var item = arguments.length > 2 ? arguments[2] : undefined;
+
+    if (html.getAttribute('lang') == 'en') {
+      index = 2;
+    } else if (html.getAttribute('lang') == 'ru') {
+      index = 3;
+    }
+
+    var p = item.classList;
+    modalImg.classList.add(p[1]);
+
+    for (var key in itext.styles[index]) {
+      if (i == key) {
+        var elem = document.createElement('div');
+        elem.innerHTML = "<div id=\"caption\">".concat(itext.styles[index][key], "</div>");
+        captionText.append(elem);
+      }
+    }
   }
 };
 
@@ -6152,7 +6207,7 @@ function cretePulsActiv(selector) {
 /*! exports provided: styles, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"styles\":[{\"0\":\"Домой\",\"1\":\"Обо мне\",\"2\":\"Навыки\",\"3\":\"Портфолио\",\"4\":\"Контакты\",\"5\":\"Денис Новик\",\"6\":\"UX | UI-дизайнер <br> 24 года, Минск\",\"7\":\"Обо мне\",\"8\":\"Привет, я Денис — UX/UI дизайнер из Минска. Интересуюсь дизайном и всем, что с ним связано.\",\"9\":\"Я учусь на курсах 'Веб и мобильный дизайн интерфейсов' в IT-Академии.\",\"10\":\"Готов реализовать отличные проекты с замечательными людьми.\",\"11\":\"Навыки\",\"12\":\"Работаю в таких программах как\",\"13\":\"Портфолио\",\"14\":\"Интернет-магазин модной одежды - Домашняя страница\",\"15\":\"Магазин Reebok - Концепция\",\"16\":\"Целевая страница Braun - Концепция\",\"17\":\"Я хочу больше...\",\"18\":\"Контакты\",\"19\":\"Хотите узнать больше или просто поболтать?\",\"20\":\"Пожалуйста!\",\"21\":\"Напиши мне!\",\"22\":\"Кстати, я фотограф\",\"23\":\"отправить\"},{\"0\":\"Home\",\"1\":\"About me\",\"2\":\"Skills\",\"3\":\"Portfolio\",\"4\":\"Contacts\",\"5\":\"Denis Novik\",\"6\":\"UX | UI designer <br> 24 years old, Minsk\",\"7\":\"About me\",\"8\":\"Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything connected with it. \",\"9\":\"I'm studying at courses 'Web and mobile design <br>  interfaces' in IT-Academy.\",\"10\":\"Ready to implement excellent projects <br> with wonderful people.\",\"11\":\"Skills\",\"12\":\"I work in such programs as\",\"13\":\"Portfolio\",\"14\":\"Online fashion store - Homepage\",\"15\":\"Reebok Store - Concept\",\"16\":\"Braun Landing Page - Concept\",\"17\":\"I want more...\",\"18\":\"Contacts\",\"19\":\"Want to know more or just chat?\",\"20\":\"You are welcome!\",\"21\":\"Send message\",\"22\":\"By the way, I'm a photographer\",\"23\":\"Send\"},{\"src\":\"assets/img/styles-7.png\",\"title\":\"Фотомозаика\",\"link\":\"#mozaika\"},{\"src\":\"assets/img/styles-8.jpg\",\"title\":\"Шарж\",\"link\":\"#sharj\"}]}");
+module.exports = JSON.parse("{\"styles\":[{\"0\":\"Домой\",\"1\":\"Обо мне\",\"2\":\"Навыки\",\"3\":\"Портфолио\",\"4\":\"Контакты\",\"5\":\"Денис Новик\",\"6\":\"UX | UI-дизайнер <br> 24 года, Минск\",\"7\":\"Обо мне\",\"8\":\"Привет, я Денис — UX/UI дизайнер из Минска. Интересуюсь дизайном и всем, что с ним связано.\",\"9\":\"Я учусь на курсах 'Веб и мобильный дизайн интерфейсов' в IT-Академии.\",\"10\":\"Готов реализовать отличные проекты с замечательными людьми.\",\"11\":\"Навыки\",\"12\":\"Работаю в таких программах как\",\"13\":\"Портфолио\",\"14\":\"Интернет-магазин модной одежды - Домашняя страница\",\"15\":\"Магазин Reebok - Концепция\",\"16\":\"Целевая страница Braun - Концепция\",\"17\":\"Я хочу больше...\",\"18\":\"Контакты\",\"19\":\"Хотите узнать больше или просто поболтать?\",\"20\":\"Пожалуйста!\",\"21\":\"Напиши мне!\",\"22\":\"Кстати, я фотограф\",\"23\":\"отправить\"},{\"0\":\"Home\",\"1\":\"About me\",\"2\":\"Skills\",\"3\":\"Portfolio\",\"4\":\"Contacts\",\"5\":\"Denis Novik\",\"6\":\"UX | UI designer <br> 24 years old, Minsk\",\"7\":\"About me\",\"8\":\"Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything connected with it. \",\"9\":\"I'm studying at courses 'Web and mobile design <br>  interfaces' in IT-Academy.\",\"10\":\"Ready to implement excellent projects <br> with wonderful people.\",\"11\":\"Skills\",\"12\":\"I work in such programs as\",\"13\":\"Portfolio\",\"14\":\"Online fashion store - Homepage\",\"15\":\"Reebok Store - Concept\",\"16\":\"Braun Landing Page - Concept\",\"17\":\"I want more...\",\"18\":\"Contacts\",\"19\":\"Want to know more or just chat?\",\"20\":\"You are welcome!\",\"21\":\"Send message\",\"22\":\"By the way, I'm a photographer\",\"23\":\"Send\"},{\"0\":\"an unusual editor in which you can not only correct and retouch images, but also transform shapes, save GIF animations, use layers and effects. These functions make it easy to transform, clone, enhance images, apply various filters to create a colorful, selling picture.\",\"1\":\"Is a program designed to work with vector graphics. Designers use Adobe Illustrator to create colorful illustrations, icons, patterns, logos, print layouts, and more.\",\"2\":\"The program is widely used in the television and film industry, as well as in the creation of three-dimensional typography and graphic design. AE is part of the Adobe ecosystem, which makes it easy to export and import content from other Adobe programs.\",\"3\":\"Figma can be used by designers, marketers, managers and developers. In Figma, they usually create prototypes of sites and applications, illustrations, vector graphics, and draw interface elements.\"},{\"0\":\"Необычный редактор, в котором можно не только корректировать и ретушировать изображения, но и преобразовывать формы, сохранять GIF-анимации, использовать слои и эффекты. Эти функции позволяют легко трансформировать, клонировать, улучшать изображения, применять различные фильтры для создания красочной, продающей картинки.\",\"1\":\"Это программа, созданная для работы с векторной графикой. С помощью Adobe Illustrator дизайнеры создают красочные иллюстрации, иконки, паттерны, логотипы, различные макеты для печати и многое другое.\",\"2\":\"Программа широко используется в телевидении и киноиндустрии, а также при создании трехмерной типографики и в графическом дизайне. АЕ является частью экосистемы Adobe, что упрощает экспорт и импорт материалов из других программ данной корпорации\",\"3\":\"В Фигме могут работать дизайнеры, маркетологи, менеджеры и разработчики. В фигме обычно создают прототипы сайтов и приложений, иллюстрации, векторную графику, рисуют элементы интерфейса.\"}]}");
 
 /***/ }),
 

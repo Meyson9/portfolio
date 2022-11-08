@@ -132,7 +132,9 @@
   grid-column-end: 6;
 }
 
-
+.photo {
+  cursor: pointer;
+}
 .photoDe img {
     width: 100%;
 }
@@ -531,6 +533,8 @@ background: #FFFFFF;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+
+
 .modal_content {
   margin: auto;
   display: block;
@@ -620,7 +624,7 @@ background: #FFFFFF;
 #caption {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 90%;
   max-width: 700px;
   text-align: center;
   color: #ccc;
@@ -2157,7 +2161,7 @@ footer {
   #caption {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 90%;
     max-width: 700px;
     text-align: center;
     color: #ccc;
@@ -2289,7 +2293,16 @@ footer {
     grid-auto-rows: 16px;
   } */
 }
-
+.modal_cont_skils {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 100px;
+  /* max-height: 647px; */
+  /*max-width: 700px;
+  */
+  margin-top: 55px;
+}
 
 .d{
   width: 55%;
