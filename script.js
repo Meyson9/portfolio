@@ -4960,6 +4960,7 @@ var form = function form() {
       btnTogg = document.querySelector('.togallMod');
 
   var clearInputs = function clearInputs() {
+	  console.log(formss);
     formss.forEach(function (item) {
       item.value = '';
     });
